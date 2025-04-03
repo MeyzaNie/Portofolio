@@ -1,0 +1,223 @@
+/* Mengimpor font 'Poppins' dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Pengaturan style untuk seluruh body halaman */
+body {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins yang sudah diimpor */
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+    scroll-behavior: smooth; /* Membuat scroll halaman lebih halus */
+    overflow-x: hidden; /* Menyembunyikan elemen yang meluap secara horizontal */
+    background-image: url('https://example.com/path/to/corak.png'); /* Mengatur gambar latar belakang */
+    background-size: cover; /* Membuat gambar latar belakang menutupi seluruh elemen */
+    background-position: center; /* Menempatkan gambar latar belakang di tengah */
+    background-attachment: fixed; /* Memastikan gambar latar belakang tetap saat di-scroll */
+}
+
+/* Navbar di bagian atas */
+.navbar {
+    position: fixed; /* Menetapkan navbar agar tetap di posisi atas saat halaman digulir */
+    top: 20px; /* Menjaga jarak 20px dari bagian atas layar */
+    right: 20px; /* Menjaga jarak 20px dari sisi kanan layar */
+    background: rgba(0, 0, 0, 0.356); /* Memberikan latar belakang dengan warna transparan */
+    backdrop-filter: blur(5px); /* Menambahkan efek blur pada latar belakang */
+    padding: 10px; /* Memberikan padding di dalam navbar */
+    border-radius: 10px; /* Menambahkan sudut melengkung */
+    box-shadow: 0px 5px 15px rgba(255, 235, 153, 0.6); /* Menambahkan bayangan di sekitar navbar */
+    font-size: 14px; /* Mengatur ukuran font */
+    z-index: 9999; /* Memastikan navbar tetap di atas elemen lain */
+}
+
+/* Pengaturan link di navbar */
+.navbar a {
+    color: #ffeb99; /* Mengatur warna teks link */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    padding: 8px 12px; /* Memberikan padding pada link */
+    display: inline-block; /* Menampilkan link secara inline */
+    transition: background 0.3s, transform 0.3s; /* Menambahkan efek transisi pada background dan transformasi */
+}
+
+/* Efek hover pada link navbar */
+.navbar a:hover {
+    background: #444; /* Mengubah latar belakang saat hover */
+    color: #ffeb99; /* Mengubah warna teks saat hover */
+    transform: scale(1.1); /* Membesarkan link sedikit saat hover */
+}
+
+/* Setiap bagian (section) dengan pengaturan layout flex */
+.section {
+    width: 100%; /* Lebar penuh */
+    height: 100vh; /* Tinggi 100% dari viewport */
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    flex-direction: column; /* Menata elemen secara vertikal */
+    justify-content: center; /* Menyusun elemen secara vertikal di tengah */
+    align-items: center; /* Menyusun elemen secara horizontal di tengah */
+    text-align: center; /* Menyusun teks di tengah */
+    padding: 50px; /* Memberikan padding di dalam section */
+    background-size: cover; /* Mengatur gambar latar belakang */
+    background-position: center; /* Menempatkan gambar latar belakang di tengah */
+}
+
+/* Pengaturan latar belakang untuk tiap section */
+#home {
+    background-image: url('C:/Users/ASUS/Downloads/2301020012-Meyza Zaharanie/1.png'); /* Mengatur gambar latar belakang untuk bagian home */
+}
+
+#about {
+    background-image: url('C:/Users/ASUS/Downloads/2301020012-Meyza Zaharanie/2.png'); /* Mengatur gambar latar belakang untuk bagian about */
+}
+
+#portfolio {
+    background-image: url('C:/Users/ASUS/Downloads/2301020012-Meyza Zaharanie/3.png'); /* Mengatur gambar latar belakang untuk bagian portfolio */
+}
+
+#skills {
+    background-image: url('C:/Users/ASUS/Downloads/2301020012-Meyza Zaharanie/4.png'); /* Mengatur gambar latar belakang untuk bagian skills */
+}
+
+#contact {
+    background-image: url('C:/Users/ASUS/Downloads/2301020012-Meyza Zaharanie/5.png'); /* Mengatur gambar latar belakang untuk bagian contact */
+}
+
+#about {
+    color: #ffffff; /* Ganti dengan warna yang diinginkan */
+}
+
+#skills {
+    color: #ffffff; /* Ganti dengan warna yang diinginkan */
+    font-weight: bold; /* Bisa ditambahkan efek tebal */
+}
+
+/* Pengaturan untuk gambar profil */
+.profile-image img {
+    width: 200px; /* Menetapkan lebar gambar profil */
+    height: 300px; /* Menetapkan tinggi gambar profil */
+    object-fit: cover; /* Memastikan gambar menutupi area tanpa terdistorsi */
+    border-radius: 10px; /* Memberikan sudut melengkung pada gambar */
+    box-shadow: 0px 5px 15px rgba(31, 31, 31, 0.8); /* Memberikan bayangan di sekitar gambar */
+    transition: transform 0.6s ease, box-shadow 0.3s ease; /* Menambahkan transisi halus pada transformasi */
+}
+
+/* Efek hover pada gambar profil dengan animasi 3D */
+.profile-image img:hover {
+    transform: scale(1.2) rotateY(5deg) rotateX(10deg); /* Efek rotasi 3D saat hover */
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.6); /* Menambahkan bayangan yang lebih kuat saat hover */
+}
+
+
+/* Tombol CTA (Call to Action) */
+.cta-button {
+    margin-top: 5px; /* Memberikan margin di atas tombol */
+    padding: 12px 20px; /* Memberikan padding pada tombol */
+    background: #ffeb99; /* Memberikan latar belakang tombol */
+    color: #000; /* Mengatur warna teks tombol */
+    font-size: 1rem; /* Mengatur ukuran font tombol */
+    border: #a59505; /* Menghapus border tombol */
+    border-radius: 25px; /* Membuat tombol dengan sudut melengkung */
+    cursor: pointer; /* Menjadikan tombol dapat diklik */
+    transition: background 0.3s, transform 0.3s; /* Efek transisi saat hover */
+}
+
+/* Efek hover pada tombol CTA */
+.cta-button:hover {
+    background: #e6d177; /* Mengubah latar belakang tombol saat hover */
+    transform: scale(1.05); /* Sedikit membesarkan tombol saat hover */
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.6); /* Menambahkan bayangan yang lebih kuat saat hover */
+}
+
+/* Box container untuk menata elemen-elemen dalam baris */
+.box-container {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    flex-wrap: wrap; /* Membungkus elemen-elemen di dalam baris jika diperlukan */
+    justify-content: center; /* Menyusun elemen-elemen di tengah */
+    gap: 20px; /* Memberikan jarak antar elemen */
+    max-width: 80%; /* Membatasi lebar maksimal container */
+    margin: auto; /* Menyusun container di tengah */
+    transition: transform 0.3s; /* Efek transisi saat elemen digulir */
+}
+
+.box-container:hover {
+    transform: none; /* Efek rotasi 3D saat hover */
+    box-shadow: none; /* Menambahkan bayangan yang lebih kuat saat hover */
+}
+
+.box:hover {
+    transform: scale(1.1); /* Perbesar hanya elemen yang dihover */
+    box-shadow: 0px 10px 25px rgba(255, 235, 153, 0.6); /* Tambahkan efek bayangan */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-box:hover {
+    transform: scale(1.1); /* Perbesar hanya elemen yang dihover */
+    box-shadow: 0px 10px 25px rgba(255, 235, 153, 0.6); /* Tambahkan efek bayangan */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Style untuk tiap box dalam container */
+.box {
+    background: rgba(255, 235, 153, 0.2); /* Memberikan latar belakang kotak dengan transparansi */
+    padding: 8px; /* Memberikan padding pada box */
+    border-radius: 10px; /* Membuat sudut box melengkung */
+    box-shadow: 0px 5px 10px rgba(255, 235, 153, 0.6); /* Memberikan bayangan pada box */
+    width: 240px; /* Menetapkan lebar box */
+    text-align: center; /* Menyusun teks di tengah box */
+}
+
+/* Kontak info yang terdiri dari berbagai link */
+.contact-info {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    flex-direction: column; /* Menata elemen secara vertikal */
+    gap: 40px; /* Memberikan jarak antar elemen */
+    font-size: 16px; /* Mengatur ukuran font */
+    text-align: center; /* Menyusun teks di tengah */
+    max-width: 400px; /* Menetapkan lebar maksimal untuk informasi kontak */
+    margin: left; /* Menyusun informasi kontak di tengah */
+}
+
+/* Mengatur tampilan link kontak */
+.contact-info a {
+    display: flex; /* Menggunakan flexbox di dalam link */
+    justify-content: center; /* Menyusun konten di tengah secara horizontal */
+    align-items: center; /* Menyusun konten di tengah secara vertikal */
+    gap: 10px; /* Memberikan jarak antar elemen di dalam link */
+    font-size: 20px; /* Mengatur ukuran font link */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+}
+
+.contact-info {
+    margin-trim: 10px;  /* Menggeser 50px ke kanan */
+}
+
+/* Gambar ikon untuk kontak */
+.contact-info img {
+    width: 24px; /* Menetapkan lebar gambar ikon */
+    height: 24px; /* Menetapkan tinggi gambar ikon */
+}
+
+
+/* Box container untuk keterampilan */
+.skills-box img {
+    width: 40px; /* Menetapkan lebar gambar keterampilan */
+    height: 40px; /* Menetapkan tinggi gambar keterampilan */
+    object-fit: contain; /* Memastikan gambar keterampilan tidak terdistorsi */
+    transition: transform 0.3s;
+}
+
+
+/* Box untuk portfolio */
+.portfolio-box {
+    width: 100%; /* Lebar penuh */
+    max-width: 300px; /* Lebar maksimal 300px */
+    text-align: center; /* Menyusun teks di tengah */
+    background: rgb(255, 255, 255); /* Memberikan latar belakang dengan transparansi */
+    padding: 20px; /* Memberikan padding pada box */
+    border-radius: 10px; /* Membuat sudut box melengkung */
+    box-shadow: 0px 5px 15px rgba(255, 235, 153, 0.6); /* Memberikan bayangan pada box */
+}
+
+.portfolio-box img {
+    width: 100%; /* Lebar gambar penuh */
+    height: 200px; /* Menetapkan tinggi gambar */
+    object-fit: cover; /* Memastikan gambar menutupi area tanpa terdistorsi */
+    border-radius: 10px; /* Membuat sudut gambar melengkung */
+}
